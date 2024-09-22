@@ -1,4 +1,4 @@
-package com.skilloops;
+package com.skillKeys;
 class MyAccessClass {
     public  String s1 = "Sonal";
      static int integer = 5;

@@ -1,4 +1,4 @@
-package com.skilloops;
+package com.skillKeys;
 
 public class String_solve {
     public static void main(String[] args) {
@@ -20,6 +20,7 @@ public class String_solve {
          * */
         if (s3.equals(s4)) System.out.println("Equals");
         else System.out.println("Not Equals");
+//        we know something that is not static belongs to an object
     }
 }
 
@@ -49,7 +50,7 @@ class StringSwap {
     }
 }
 // Everything is passed by value
-//WITHOUT USING SWAP METHOD OT TEMP VAR
+//WITHOUT USING SWAP METHOD TO TEM
 class withoutTempint{
     public static void main(String[] args) {
         int i1 =5;
@@ -63,30 +64,59 @@ class withoutTempint{
         System.out.println("After swaping " + "i1 = " + i1 +" "+ "i2 = " + i2);
     }
 }
-
-class IntegerSwap{
-
+// Incorrect swap
+class IncoorectIntegerSwap {
     public static void main(String[] args) {
-        Integer a =10;
-        Integer b =50;
+        Integer a = 10;
+        Integer b = 50;
 
-        int i=11;
-        int j=21 ;
-//       if we write logic in main method it is swapping values and initialize them inmain method
-        swap(i,j);
-        System.out.println("i : "+i+" j : "+j);
-        swap(a,b);
-        System.out.println("a"+ a+ " b "+b);
+        int i = 11;
+        int j = 21;
+
+        // Attempting to swap i and j
+        swap(i, j);
+        System.out.println("i: " + i + " j: " + j);  // Outputs: i: 11 j: 21 (no swap)
+
+        // Attempting to swap a and b
+        swap(a, b);
+        System.out.println("a: " + a + " b: " + b);  // Outputs: a: 10 b: 50 (no swap)
     }
-        static void swap(Integer a, Integer b){
-            Integer temp ;
-            temp = a;
-            a = b;
-            b = temp;
-//      logic written in outside main in another method
-//            int t = i;
-//            i=j;
-//            j=t;
-//            why is not swapping -- bcoz of Integer class is Final
-        }
+
+    static void swap(Integer a, Integer b) {
+        Integer temp;
+        temp = a;
+        a = b;
+        b = temp;
+
+        // This swap only affects the local copies of a and b inside this method.
+    }
 }
+
+// Correct way to swap
+class IntWrapper {
+    public int value;
+
+    public IntWrapper(int value) {
+        this.value = value;
+    }
+}
+//if we write logic in main method it is swapping values and initialize them in main method
+
+class CorrectIntegerSwap {
+    public static void main(String[] args) {
+        IntWrapper i = new IntWrapper(11);
+        IntWrapper j = new IntWrapper(21);
+
+        swap(i, j);
+        System.out.println("i: " + i.value + " j: " + j.value);  // Outputs: i: 21 j: 11
+    }
+
+    static void swap(IntWrapper a, IntWrapper b) {
+        int temp = a.value;
+        a.value = b.value;
+        b.value = temp;
+    }
+}
+// Incorrect swap
+
+
