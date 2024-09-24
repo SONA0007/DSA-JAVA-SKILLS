@@ -1,7 +1,7 @@
 package com.BasicCoding;
 public class StarPatterns {
     public static void main(String[] args) {
-        System.out.println("I am running star package !");
+        System.out.println("I am running star patterns !");
     }
 }
 class SquareStar{
