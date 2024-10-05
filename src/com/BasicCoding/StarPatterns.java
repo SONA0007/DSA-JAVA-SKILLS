@@ -127,11 +127,13 @@ class KiteShape{
             }
             System.out.println("  ");
         }
-        for (int i = 1; i < 5; i++) {
-            for (int j = i; j > 0; j--) {
+//        to flip upper half we changed hte logic of outer loop
+        // and values of j and k for displaying spaces and * neatly.
+        for (int i = 5; i > 0; i--) {
+            for (int j = i; j < 6; j++) {
                 System.out.print("  ");
             }
-            for (int k = i; k < 5; k++) {
+            for (int k = i-1; k > 0; k--) {
                 System.out.print("   *");
             }
             System.out.println("  ");

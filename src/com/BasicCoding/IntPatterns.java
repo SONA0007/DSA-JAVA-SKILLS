@@ -95,6 +95,7 @@ class KiteShapeInt{
             }
             System.out.println("    ");
         }
+        // to flip the first half we need to change the logic of rows only
         for (int i = 4; i > 0 ; i--) {
             for (int j = i; j < 5; j++) {
                 System.out.print("   ");
@@ -120,7 +121,6 @@ class OneToFifteenTriangle{
         }
     }
 }
-
 class ZeroOneTriangle{
     public static void main(String[] args) {
         int n =5;
@@ -133,6 +133,28 @@ class ZeroOneTriangle{
                 }else {
                     System.out.print("0"+" ");
                 }
+            }
+            System.out.println(" ");
+        }
+    }
+}
+
+class PalindromePyramid{
+    public static void main(String[] args) {
+        int n = 6;
+        // i represent row no.
+        for (int i = 1; i < n; i++) {
+            //Spaces
+            for (int j = 1; j < n-i; j++) {
+                System.out.print("  ");
+            }
+            //first half
+            for (int j = i; j > 0; j--) {
+                System.out.print(j+" ");
+            }
+            //second Half
+            for (int j = 2; j <=i; j++) {
+                System.out.print(j+" ");
             }
             System.out.println(" ");
         }
