@@ -157,3 +157,23 @@ class HollowRectangle{
         }
     }
 }
+
+class SpacedRightAngle{
+    public static void main(String[] args) {
+        int n = 5;// rows
+        int m = 6; // column
+//        Can use this logic for above code as well
+
+//        treat it as matrix and each cell is of (row, col)
+        for (int i = 1; i <= n; i++) {
+            for (int j = i; j < m; j++) {
+                System.out.print("  ");
+            }
+            for (int j = i; j > 0; j--) {
+                System.out.print(" *");
+            }
+            System.out.println(" ");
+        }
+    }
+
+}
