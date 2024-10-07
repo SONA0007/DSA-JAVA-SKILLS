@@ -44,6 +44,7 @@ public class Array1 {
                 break;
             }
         }
+
         if(isAscending) System.out.println("array is in ascending order.");
         else System.out.println("Not ascending. ");
 
@@ -53,5 +54,7 @@ public class Array1 {
         for (int j : arr) {
             System.out.print(" " + j);
         }
+
+
     }
 }
