@@ -127,87 +127,14 @@ class KiteShape{
             }
             System.out.println("  ");
         }
-//        to flip upper half we changed hte logic of outer loop
-        // and values of j and k for displaying spaces and * neatly.
-        for (int i = 5; i > 0; i--) {
-            for (int j = i; j < 6; j++) {
+        for (int i = 1; i < 5; i++) {
+            for (int j = i; j > 0; j--) {
                 System.out.print("  ");
             }
-            for (int k = i-1; k > 0; k--) {
+            for (int k = i; k < 5; k++) {
                 System.out.print("   *");
             }
             System.out.println("  ");
-        }
-    }
-}
-class HollowRectangle{
-    public static void main(String[] args) {
-        int n = 4;// rows
-        int m = 5; // column
-//        Can use this logic for above code as well
-
-//        treat it as matrix and each cell is of (row, col)
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= m; j++) {
-                if (i == 1 || j == 1 || i == n || j == m ){
-                    System.out.print("* ");
-                }else {
-                    System.out.print("  ");
-                }
-            }
-            System.out.println(" ");
-        }
-    }
-}
-
-class SpacedRightAngle{
-    public static void main(String[] args) {
-        int n = 5;// rows
-        int m = 6; // column
-//        Can use this logic for above code as well
-
-//        treat it as matrix and each cell is of (row, col)
-        for (int i = 1; i <= n; i++) {
-            for (int j = i; j < m; j++) {
-                System.out.print("  ");
-            }
-            for (int j = i; j > 0; j--) {
-                System.out.print(" *");
-            }
-            System.out.println(" ");
-        }
-    }
-
-}
-class ButterflyPattern{
-    public static void main(String[] args) {
-        int n = 4;
-
-        for (int i = 1; i < n; i++) {
-            for (int j = 1; j <=i; j++) {
-                System.out.print("* ");
-            }
-            int space= (n-i)*2;
-            for (int j = 0; j <space; j++) {
-                System.out.print("  ");
-            }
-            for (int j = 1; j <=i; j++) {
-                System.out.print("* ");
-            }
-            System.out.println(" ");
-        }
-        for (int i = n; i >=1; i--) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print("* ");
-            }
-            int space= (n-i)*2;
-            for (int j = 0; j <space; j++) {
-                System.out.print("  ");
-            }
-            for (int j = 1; j <=i; j++) {
-                System.out.print("* ");
-            }
-            System.out.println(" ");
         }
     }
 }
