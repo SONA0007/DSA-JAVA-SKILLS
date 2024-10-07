@@ -12,6 +12,7 @@ public class FibonacciSeries {
         int b = 1;
         int c ;
         System.out.print(a+" "+b +" ");
+        // first 2 terms are already initialized so, i = 2
         for (int i = 2; i < n; i++) {
             c = a + b;
             System.out.print(c+ " ");
