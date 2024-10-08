@@ -53,7 +53,15 @@ public class Array1 {
         System.out.println("Sorted Array");
         for (int j : arr) {
             System.out.print(" " + j);
+
         }
+        /*Average of array elements*/
+        double sum=0;
+        for (int j : arr) {
+            sum += j;
+        }
+        System.out.println("\nAverage of array elements : " +sum/arr.length);
+        /*Inserting in array*/
 
 
     }
