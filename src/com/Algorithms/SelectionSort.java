@@ -12,7 +12,8 @@ public class SelectionSort {
 
     public static void selectionSort(int[] arr) {
         int n = arr.length;
-
+// counter1< n-1 bcoz, last element will be automatically sorted ,
+// once other ar sorted.
         for (int counter1 = 0; counter1 < n - 1; counter1++) {
             // Find the minimum element in the unsorted part of the array
             int minIndex = counter1;
@@ -21,6 +22,7 @@ public class SelectionSort {
                     minIndex = counter2;
                 }
             }
+            // 3 step swaping
             // Swap the found minimum element with the first element of the unsorted part
             int temp = arr[minIndex];
             arr[minIndex] = arr[counter1];
