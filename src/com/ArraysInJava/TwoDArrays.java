@@ -10,8 +10,6 @@ public class TwoDArrays {
 
 
         int[][] numbers = new int[rows][cols];
-
-
         //input
         //rows
         for(int i=0; i<rows; i++) {
@@ -20,10 +18,6 @@ public class TwoDArrays {
                 numbers[i][j] = sc.nextInt();
             }
         }
-
-
-
-
         for(int i=0; i<rows; i++) {
             for(int j=0; j<cols; j++) {
                 System.out.print(numbers[i][j]+" ");
