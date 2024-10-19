@@ -15,10 +15,11 @@ public class BinnarySearch {
         }
         System.out.println("Enter the element to search");
         int x = sc.nextInt();
-        Binaryseach(x,arr);
-        if(x == -1){
-            System.out.println("element not found");
+        int result = Binaryseach(x,arr);
+        if(result == -1){
+            System.out.println("element is not in array");
         }
+
     }
 
     private static int Binaryseach(int x, int[] arr) {
