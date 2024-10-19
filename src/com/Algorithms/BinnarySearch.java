@@ -17,6 +17,9 @@ public class BinnarySearch {
         int x = sc.nextInt();
 
         Binaryseach(x,arr);
+        if(x == -1){
+            System.out.println("element not found");
+        }
     }
 
     private static int Binaryseach(int x, int[] arr) {
