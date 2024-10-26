@@ -33,6 +33,7 @@ public class Frequencyofelement {
            count++;
          }
         }
+
       System.out.println("count of even elements : "+ count);
     }
 }
