@@ -1,7 +1,7 @@
 package leetcode.ArrayQA;
 
 import java.util.Scanner;
-/*A customer's wealth is the amount of money they have in all their bank accounts.
+/* 1672. A customer's wealth is the amount of money they have in all their bank accounts.
 The richest customer is the customer that has the maximum wealth.
 Example:
 Input: accounts = [[1,5],[7,3],[3,5]]
