@@ -64,15 +64,6 @@ public class Array1 {
         System.out.println("\nAverage of array elements : " +sum/arr.length);
         /*Inserting in array*/
 
-        /*FREQUENCY OF ELEMMENTS I ARRAY*/
-            int count = 0 ;
-            int x = sc.nextInt();
-            for (int i = 0; i < arr.length; i++) {
-            if (arr[i]== x){
-                count++;
-            }
-        }
-        System.out.println("Frequncy of element is "+ count);
 
     }
 }

@@ -30,7 +30,7 @@ public class BinnarySearch {
         for (int i = 0; i < arr.length; i++) {
             mid= (int) Math.floor((start+end)/2);
 
-            if (x== arr[mid]){
+            if (x == arr[mid]){
                 System.out.println("element is found at - "+ mid);
                 return mid;
             } else if (x < arr[mid]) {
