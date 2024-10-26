@@ -25,10 +25,10 @@ public class SumOfElementIn2Darr {
         int coountrows = numbers.length;
         int countcolomns = numbers[0].length;
 
-        int totalElments = rows * cols;
+        int totalElements = rows * cols;
         System.out.println("count rows " + coountrows);
         System.out.println("count colomns " + countcolomns);
-        System.out.println("count total elements " + totalElments);
+        System.out.println("count total elements " + totalElements);
 
         // total sum of array elements
         for (int i = 0; i < rows; i++) {
