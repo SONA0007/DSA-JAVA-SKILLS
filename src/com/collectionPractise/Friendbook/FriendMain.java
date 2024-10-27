@@ -9,6 +9,9 @@ public class FriendMain {
         FriendDetails.add(new Friend("Sonal",
                 724053324,
                 "sonal@gmail.com"));
+        FriendDetails.add(new Friend("Somesh",
+                646464645,
+                "somesh@gmail.com"));
 
         System.out.println(FriendDetails.indexOf("Sonal"));
         System.out.println("Friend details: " + FriendDetails);
