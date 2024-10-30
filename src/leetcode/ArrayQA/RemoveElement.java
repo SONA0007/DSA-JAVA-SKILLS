@@ -1,5 +1,7 @@
 package leetcode.ArrayQA;
 
+import java.util.Scanner;
+
 /*27. Given an integer array nums and an integer val, remove all occurrences of val in nums in-place.
 The order of the elements may be changed.
 Then return the number of elements in nums which are not equal to val.
@@ -9,15 +11,25 @@ Change the array nums such that the first k elements of nums contain the element
 which are not equal to val. The remaining elements of nums are not important
 as well as the size of nums. Return k.*/
 public class RemoveElement {
-    public int removeElement(int[] nums, int val) {
-        int counter = 0;
+    public static int removeElement(int[] nums, int val) {
+        int index = 0;
         for (int i = 0; i < nums.length; i++) {
             if (nums[i] != val) {
-                nums[counter] = nums[i];
-                counter++;
+                nums[index] = nums[i];
+                index++;
             }
         }
-        return counter;
+        return index;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {1, 2, 2, 3, 4};
+
+        Scanner sc = new Scanner(System.in);
+        int val = sc.nextInt();
+
+        int ans = removeElement(nums, val);
+        System.out.println(ans);
     }
 
 }
