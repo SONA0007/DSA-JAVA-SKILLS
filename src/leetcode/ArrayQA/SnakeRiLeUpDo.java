@@ -32,11 +32,13 @@ public class SnakeRiLeUpDo {
         // Test case 1
         int n1 = 2;
         String[] commands1 = {"RIGHT", "DOWN"};
+        System.out.println("R -> D :");
         System.out.println(finalPositionOfSnake(n1, List.of(commands1)));  // Output: 3
 
         // Test case 2
         int n2 = 3;
         String[] commands2 = {"DOWN", "RIGHT", "UP"};
+        System.out.println("D -> R -> U :");
         System.out.println(finalPositionOfSnake(n2, List.of(commands2)));  // Output: 1
     }
 
