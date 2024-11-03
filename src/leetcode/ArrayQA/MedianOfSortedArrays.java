@@ -16,6 +16,7 @@ public class MedianOfSortedArrays {
         int m = nums1.length;
         int n = nums2.length;
         int imin = 0, imax = m, halfLen = (m + n + 1) / 2;
+
         while (imin <= imax) {
             int i = (imin + imax) / 2;
             int j = halfLen - i;
