@@ -1,11 +1,12 @@
 package com.String;
 
-/*
-For lowercase letters ('a' to 'z'), if the letter is 'z', it wraps around to 'a', creating a carry
-to the next character on the left.
-For uppercase letters ('A' to 'Z'), if the letter is 'Z', it wraps around to 'A'.
-If it’s any other letter, it increments the letter by 1 (e.g., 'd' becomes 'e')
-and exits early with
+/* doubt -
+        explaination, why for loop exit for given string abcd?
+    For lowercase letters ('a' to 'z'), if the letter is 'z', it wraps around to 'a', creating a carry
+    to the next character on the left.
+    For uppercase letters ('A' to 'Z'), if the letter is 'Z', it wraps around to 'A'.
+    If it’s any other letter, it increments the letter by 1 (e.g., 'd' becomes 'e')
+    and exits early with
 line 42
     return sb.toString();, since no carry is needed.
 
