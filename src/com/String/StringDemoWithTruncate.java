@@ -2,7 +2,7 @@ package com.String;
 
 import java.util.Arrays;
 
-public class StringDemo {
+public class StringDemoWithTruncate {
     public static void main(String[] args) {
         String s = new String("Hi! Here is in String Package.    ");
 
