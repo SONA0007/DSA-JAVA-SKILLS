@@ -27,6 +27,7 @@ public class RemoveFirstOcurrence {
         return s;
     }
 
+    //leetcode 28:
     public static int strStr(String haystack, String needle) {
         for (int i = 0; i <= haystack.length() - needle.length(); i++) {
             if (haystack.length() < needle.length()) {
