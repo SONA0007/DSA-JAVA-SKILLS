@@ -37,6 +37,7 @@ public class StringDemoWithTruncate {
         for (int i = 0; i < word_limit; i++) {
             truncated_str.append(words[i]).append(" ");
         }
+
         return truncated_str.toString().strip();
     }
 }

@@ -25,7 +25,7 @@ public class SuccesorOfString {
 
         StringBuilder sb = new StringBuilder(s);
         int n = sb.length();
-//        I dont get the question, carry is propagated
+//        I don't get the question, carry is propagated
         // Start from the rightmost character
         for (int i = n - 1; i >= 0; i--) {
             char ch = sb.charAt(i);
