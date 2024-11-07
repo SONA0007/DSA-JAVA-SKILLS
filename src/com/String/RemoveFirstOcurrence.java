@@ -13,7 +13,7 @@ public class RemoveFirstOcurrence {
         String result = removeFirstOccurrence(text, search);
         System.out.println("Output after removing word : " + result);
 
-
+        System.out.println(strStr(text, search));
     }
 
     public static String removeFirstOccurrence(String s, String search_str) {
@@ -27,7 +27,8 @@ public class RemoveFirstOcurrence {
         return s;
     }
 
-    //leetcode 28:
+    //leetcode 28: time complexity 1ms and
+    // for  return haystack.toLowerCase().indexOf(needle.toLowerCase()); is 0ms
     public static int strStr(String haystack, String needle) {
         for (int i = 0; i <= haystack.length() - needle.length(); i++) {
             if (haystack.length() < needle.length()) {
