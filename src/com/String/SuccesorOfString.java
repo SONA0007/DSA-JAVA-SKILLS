@@ -1,6 +1,8 @@
 package com.String;
 
-/* doubt -
+/* Question - Get the succesor of the last char of string
+
+doubt -
         explaination, why for loop exit for given string abcd?
     For lowercase letters ('a' to 'z'), if the letter is 'z', it wraps around to 'a', creating a carry
     to the next character on the left.
