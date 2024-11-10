@@ -52,6 +52,17 @@ public class ValidPhrasePalindrome {
         //compare them
         return Filter_str.equals(reverse_str);
 
+        /*  Time Complexity: O(n)
+            Space Complexity: O(n)
+         */
+
         // you can solve it by using two pointers method which is more optimized.
     }
+    /*public static boolean TwoPointersWayPalindrome(String s){
+     *//*  Time Complexity: O(n)
+            Space Complexity: O(1)
+         *//*
+
+
+    }*/
 }
