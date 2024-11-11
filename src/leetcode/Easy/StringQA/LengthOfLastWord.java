@@ -1,4 +1,4 @@
-package leetcode.StringQA;
+package leetcode.Easy.StringQA;
 
 // leetcode 58
 public class LengthOfLastWord {

@@ -1,4 +1,4 @@
-package leetcode.ArrayQA;
+package leetcode.Easy.ArrayQA;
 
 public class ShuffleArray {
     public static void main(String[] args) {

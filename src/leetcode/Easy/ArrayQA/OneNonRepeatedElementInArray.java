@@ -1,4 +1,4 @@
-package leetcode.ArrayQA;
+package leetcode.Easy.ArrayQA;
 /*Write a Program to find that one element in an on-empty array of integers nums,
 where every element appears twice except for one.Example:
 Input: nums = [2,2,1]Output: 1*/

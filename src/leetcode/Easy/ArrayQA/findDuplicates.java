@@ -1,4 +1,4 @@
-package leetcode.ArrayQA;
+package leetcode.Easy.ArrayQA;
 
 import java.util.ArrayList;
 import java.util.HashSet;

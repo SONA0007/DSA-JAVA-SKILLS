@@ -1,4 +1,4 @@
-package leetcode.StringQA;
+package leetcode.Easy.StringQA;
 
 /* 125
 A phrase is a palindrome if, after converting all uppercase letters into lowercase letters

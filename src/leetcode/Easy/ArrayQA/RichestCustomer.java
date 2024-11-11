@@ -1,4 +1,4 @@
-package leetcode.ArrayQA;
+package leetcode.Easy.ArrayQA;
 
 import java.util.Scanner;
 /* 1672. A customer's wealth is the amount of money they have in all their bank accounts.

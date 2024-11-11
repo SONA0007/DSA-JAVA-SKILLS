@@ -1,4 +1,4 @@
-package leetcode.StringQA;
+package leetcode.Easy.StringQA;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package leetcode.ArrayQA;
+package leetcode.Easy.ArrayQA;
 
 /*You are given a matrix of dimensions n x m.
 The task is to perform boundary traversal on the matrix

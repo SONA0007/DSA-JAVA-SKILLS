@@ -1,8 +1,6 @@
-package leetcode.ArrayQA;
+package leetcode.Easy.ArrayQA;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 /*There is a snake in an n x n matrix grid and can move in four possible directions.
 Each cell in the grid is identified by the position: grid[i][j] = (i * n) + j.
