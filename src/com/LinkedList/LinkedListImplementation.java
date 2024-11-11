@@ -38,14 +38,20 @@ public class LinkedListImplementation {
     }
     //delete: Removes a node with a specific value.
     public void delete(int value) {
+        //Check if the list is empty:
         if (head == null) return;
 
-        if (head.data == value) {
+        if (head.data == value) { //If the head node contains the value to be deleted,
+            // the head is updated to the next node in the list, effectively removing the current head.
             head = head.next;
             return;
         }
         Node currentNode = head;
-        while ((currentNode != null) && (currentNode.next.data != value)) {
+       /*       A loop is used to traverse the list. The condition currentNode != null ensures
+                that we don't try to access properties of a null object.
+                The condition currentNode.next.data != value checks the data of the next node
+        */
+        while ((currentNode != null) && (currentNode.next != null && (currentNode.next.data != value)) {
             currentNode.next = currentNode;
         }
         if (currentNode.next != null) {
