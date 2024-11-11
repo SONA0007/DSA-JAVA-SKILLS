@@ -51,7 +51,7 @@ public class LinkedListImplementation {
                 that we don't try to access properties of a null object.
                 The condition currentNode.next.data != value checks the data of the next node
         */
-        while ((currentNode != null) && (currentNode.next != null && (currentNode.next.data != value)) {
+        while ((currentNode != null) && (currentNode.next != null) && (currentNode.next.data != value)) {
             currentNode.next = currentNode;
         }
         if (currentNode.next != null) {
