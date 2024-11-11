@@ -7,6 +7,9 @@ public class LinkedListImplementation {
 
         llist.addFirstNode(10);
         llist.addOther(20);
+        llist.addOther(30);
+        llist.PrintList();
+        llist.delete(20);
         llist.PrintList();
     }
 
@@ -33,9 +36,22 @@ public class LinkedListImplementation {
             currentNode.next = newNode;
         }
     }
-
-
     //delete: Removes a node with a specific value.
+    public void delete(int value) {
+        if (head == null) return;
+
+        if (head.data == value) {
+            head = head.next;
+            return;
+        }
+        Node currentNode = head;
+        while ((currentNode != null) && (currentNode.next.data != value)) {
+            currentNode.next = currentNode;
+        }
+        if (currentNode.next != null) {
+            currentNode.next = currentNode.next.next;
+        }
+    }
 
     //printList: Prints all the elements in the list from head to end.
     public void PrintList() {
