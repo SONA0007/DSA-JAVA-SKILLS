@@ -41,7 +41,6 @@ public class LinkedListImplementation {
         //Check if the list is empty:
         if (head == null) return;
 
-
         if (head.data == value) { //If the head node contains the value to be deleted,
             // the head is updated to the next node in the list, effectively removing the current head.
             head = head.next;
@@ -52,7 +51,7 @@ public class LinkedListImplementation {
                 that we don't try to access properties of a null object.
                 The condition currentNode.next.data != value checks the data of the next node
         */
-        while ((currentNode != null) && (currentNode.next != null) && (currentNode.next.data != value)) {
+        while (currentNode.next != null && currentNode.next.data != value) {
             currentNode.next = currentNode;
         }
         if (currentNode.next != null) {
