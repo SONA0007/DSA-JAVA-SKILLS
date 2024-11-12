@@ -58,7 +58,6 @@ public class LinkedListImplementation {
             currentNode.next = currentNode.next.next;
         }
     }
-
     //printList: Prints all the elements in the list from head to end.
     public void PrintList() {
         Node currentNode = head;
