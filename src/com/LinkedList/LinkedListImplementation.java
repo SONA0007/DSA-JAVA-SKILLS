@@ -41,6 +41,7 @@ public class LinkedListImplementation {
         //Check if the list is empty:
         if (head == null) return;
 
+
         if (head.data == value) { //If the head node contains the value to be deleted,
             // the head is updated to the next node in the list, effectively removing the current head.
             head = head.next;
