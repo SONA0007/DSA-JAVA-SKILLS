@@ -69,5 +69,33 @@ public class VIPLinkedList {
             current.next = newNode;
         }
     }
+
+    public void removeMember(String nameToRemove) {
+        if (head == null) {
+            return; // Empty list, nothing to remove
+        }
+
+        // Check if the head node is the one to remove
+        if (head.name.equals(nameToRemove)) {
+            head = head.next;
+            return; // Exit after removing the head node to avoid traversal
+        }
+/*
+    We start the loop with current set to head,
+    This ensures that the loop only runs as long as current.next is not null, meaning we haven’t reached the end of the list.
+    After each iteration, current is updated to the next node, advancing the loop.
+*/
+        //  this is only traversal through the VIPlist to update changes we want, otherwise it does nothing.
+        for (Node current = head; current.next != null; current = current.next) {
+            if (current.next.name.equals(nameToRemove)) {
+                current.next = current.next.next;
+                break; // Exit after removing the node
+            }
+            /*  We check if current.next.name.equals(nameToRemove). If this is true, it means current.next is the node we want to remove.
+                Remove the Node: Set current.next = current.next.next, which skips over the node to be removed.
+                Break: After removing the node, we exit the loop immediately with break to avoid unnecessary traversal.     */
+        }
+    }
+
 }
 
