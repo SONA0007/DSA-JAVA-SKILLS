@@ -62,10 +62,11 @@ public class VIPLinkedList {
         if (head == null) {
             head = newNode;
         } else {
-            Node current = head;
-            while (current.next != null) {
-                current = current.next;
+            Node current;
+            for (current = head; current.next != null; current = current.next) {
+                // The for loop automatically iterates through the nodes
             }
+            // After the loop, 'current' will point to the last node
             current.next = newNode;
         }
     }
