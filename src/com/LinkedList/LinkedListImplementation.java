@@ -75,7 +75,6 @@ class Node {
         Contains data and a reference (next) to the next node.  */
     int data;
     Node next;
-
     public Node(int data) {
         this.data = data;
         this.next = null;
