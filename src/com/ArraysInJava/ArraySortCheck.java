@@ -1,5 +1,6 @@
 package com.ArraysInJava;
 
+//Brute Force
 public class ArraySortCheck {
 
     public static boolean isSortedBruteForce(int[] arr) {
@@ -10,13 +11,13 @@ public class ArraySortCheck {
         }
         return true; // Sorted
     }
-
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
         System.out.println("Is the array sorted (Brute Force)? " + isSortedBruteForce(arr));
     }
 }
 
+//Optimal approach
 class ArraySortedCheck {
 
     public static boolean isSortedOptimal(int[] arr) {
