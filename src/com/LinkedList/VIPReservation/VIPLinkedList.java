@@ -37,7 +37,6 @@ public class VIPLinkedList {
     }
 
     Node head;
-
     public void printVIPlist() {
         Node current = head;
         while (current != null) {

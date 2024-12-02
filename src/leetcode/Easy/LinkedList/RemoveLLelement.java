@@ -26,7 +26,6 @@ public class RemoveLLelement {
                 current = current.next;
             }
         }
-
         // Return the modified head of the list
         return head;
     }
@@ -35,7 +34,6 @@ public class RemoveLLelement {
 class ListNode {
     int val;
     ListNode next;
-
     ListNode() {
     }
 

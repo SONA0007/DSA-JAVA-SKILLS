@@ -12,7 +12,6 @@ You must write an algorithm that runs in O(n) time and uses only constant auxili
 * */
 public class findDuplicates {
     public static void main(String[] args) {
-
         int[] nums = {4, 3, 2, 7, 8, 2, 3, 1};
         List<Integer> duplicates = findDuplicates(nums);
         System.out.println("The duplicate numbers are: " + duplicates);

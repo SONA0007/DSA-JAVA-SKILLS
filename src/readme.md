@@ -1,13 +1,13 @@
 # Using '==' Operator 
 In java === operator is not used.
 ## Collections (Framework) in java
-* has different classes 
-* can use as library
-* Dynamic length
 
+* Has different classes
+* Can use as library
+* Dynamic length
 # classes-
 1. ArrayList
-2. Linkedlist
+2. Linked list
 3. vector
 4. HashSet
 5. PriorityQueue
@@ -18,7 +18,6 @@ In java === operator is not used.
 2. queue
 3. dequeue
 4. List
-
 # Collections
 1. list -- allows duplicate
 2. map -- not allows duplicates
