@@ -1,7 +1,8 @@
 package leetcode.Easy.LinkedList;
 
 // 206.
-/*class ListNode {
+/*
+class ListNode {
     int val;
     ListNode next;
     ListNode() {
