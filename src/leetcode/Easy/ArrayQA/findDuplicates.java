@@ -21,6 +21,7 @@ public class findDuplicates {
         List<Integer> duplicates = new ArrayList<>();
         HashSet<Integer> seen = new HashSet<>();
 
+
         for (int num : nums) {
             if (seen.contains(duplicates)) {
                 duplicates.add(num);
