@@ -27,6 +27,23 @@ public class newDoublyListExample {
             tail = newNode;
         }
     }
+
+    public void addAfter(DLNode prevNode, int data) {
+        if (prevNode == null) {
+            return; // Check if the previous node is null
+        }
+
+        DLNode newNode = new DLNode(data); // Create a new node
+        newNode.next = prevNode.next; // Set the next of new node to next of prev node
+        prevNode.next = newNode; // Set the next of prev node to new node
+        newNode.prev = prevNode; // Set the previous of new node to prev node
+
+        if (newNode.next != null) { // Check if the new node is not the last node
+            newNode.next.prev = newNode; // Set the next node's prev to the new node
+        } else { // If the new node is the last node
+            tail = newNode; // Set the tail to the new node
+        }
+    }
 }
 
 class DLNode {
