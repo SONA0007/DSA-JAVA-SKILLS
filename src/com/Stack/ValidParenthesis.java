@@ -82,7 +82,6 @@ class ValidParenthesesArray {
         }
         return top == -1; // Stack should be empty
     }
-
     public static void main(String[] args) {
         System.out.println(isValid("()"));       // true
         System.out.println(isValid("()[]{}"));   // true
