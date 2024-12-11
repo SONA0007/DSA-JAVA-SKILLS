@@ -6,7 +6,7 @@ import java.util.HashMap;
 public class ValidParenthesis {
 }
 
-class ValidParentheses {
+class ValidParenthesesStack {
     public static boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
 
@@ -64,15 +64,14 @@ class ValidParenthesesMap {
 
 class ValidParenthesesArray {
     public static boolean isValid(String s) {
-        char[] stack = new char[s.length()];
-        int top = -1; // Acts as the index for the top of the stack
-
+        char[] bracketStack = new char[s.length()];
+        int top = -1;
         for (char c : s.toCharArray()) {
             if (c == '(' || c == '{' || c == '[') {
-                stack[++top] = c; // Pushing opening brackets to the stack
+                bracketStack[++top] = c;//PUSHING OPENING BRACKETS TO THE STACK
             } else {
-                if (top == -1) return false; // Stack is empty
-                char last = stack[top--]; // Pop the top element
+                if (top == -1) return false;
+                char last = bracketStack[top--];//POPPING THE STACK TOP
                 if ((c == ')' && last != '(') ||
                         (c == '}' && last != '{') ||
                         (c == ']' && last != '[')) {
@@ -80,8 +79,35 @@ class ValidParenthesesArray {
                 }
             }
         }
-        return top == -1; // Stack should be empty
+        return top == -1;
     }
+
+    /*  DRY RUN --
+ Test Case 4: s = "([])"
+ Initial State:
+ bracketStack = [ , , , ].
+ top = -1.
+
+ Iterating through s:
+ Character (:
+ Push: bracketStack[++top] = '('.
+ Updated bracketStack = [(, , , ], top = 0.
+ Character [:
+ Push: bracketStack[++top] = '['.
+ Updated bracketStack = [(, [, , ], top = 1.
+ Character ]:
+ Pop: last = bracketStack[top--] = '['.
+ Match condition satisfied.
+ Updated bracketStack = [(, , , ], top = 0.
+ Character ):
+ Pop: last = bracketStack[top--] = '('.
+ Match condition satisfied.
+ Updated bracketStack = [ , , , ], top = -1.
+
+ Final Check:
+ top == -1 → Stack is empty, so the result is true.
+
+ */
     public static void main(String[] args) {
         System.out.println(isValid("()"));       // true
         System.out.println(isValid("()[]{}"));   // true
