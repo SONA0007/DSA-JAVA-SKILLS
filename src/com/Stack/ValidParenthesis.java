@@ -69,7 +69,7 @@ class ValidParenthesesArray {
 
         for (char c : s.toCharArray()) {
             if (c == '(' || c == '{' || c == '[') {
-                stack[++top] = c; // Push to the stack
+                stack[++top] = c; // Pushing opening brackets to the stack
             } else {
                 if (top == -1) return false; // Stack is empty
                 char last = stack[top--]; // Pop the top element
