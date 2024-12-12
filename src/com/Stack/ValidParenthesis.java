@@ -8,14 +8,13 @@ public class ValidParenthesis {
 
 class ValidParenthesesStack {
     public static boolean isValid(String s) {
-        Stack<Character> stack = new Stack<>();
-
+        Stack<Character> bracStack = new Stack<>();
         for (char c : s.toCharArray()) {
             if (c == '(' || c == '{' || c == '[') {
-                stack.push(c); // Push opening brackets
+                bracStack.push(c);
             } else {
-                if (stack.isEmpty()) return false; // No matching opening bracket
-                char top = stack.pop(); // Check the top of the stack
+                if (bracStack.isEmpty()) return false;
+                char top = bracStack.pop();
                 if ((c == ')' && top != '(') ||
                         (c == '}' && top != '{') ||
                         (c == ']' && top != '[')) {
@@ -23,7 +22,7 @@ class ValidParenthesesStack {
                 }
             }
         }
-        return stack.isEmpty(); // All brackets must be matched
+        return bracStack.isEmpty();
     }
 
     public static void main(String[] args) {
