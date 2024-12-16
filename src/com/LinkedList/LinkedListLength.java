@@ -1,10 +1,11 @@
+package com.LinkedList;
 // Node class representing a single node in the linked list
-class Node {
+class Node1 {
     int data;       // Value of the node
     Node next;      // Pointer to the next node
 
     // Constructor to initialize a node
-    public Node(int data) {
+    public Node1(int data) {
         this.data = data;
         this.next = null;
     }
