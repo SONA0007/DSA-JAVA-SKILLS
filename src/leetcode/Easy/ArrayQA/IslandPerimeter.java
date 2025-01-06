@@ -23,6 +23,7 @@ public class IslandPerimeter {
                     // Start with 4 sides
                     perimeter += 4;
 
+                    // For the given box, if its side is equal to 1 then we wil minus that perimeter
                     // Check the cell above
                     if (i > 0 && grid[i - 1][j] == 1) {
                         perimeter -= 1;

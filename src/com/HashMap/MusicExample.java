@@ -35,7 +35,8 @@ public class MusicExample {
         System.out.println(removedArtist + " has been removed from the collection.");
 
         // Displaying the entire collection
-        System.out.println("Current artist-song collection:");
+        System.out.println("Cur" +
+                "rent artist-song collection:");
         for (String key : artistToSong.keySet()) {
             System.out.println(key + " -> " + artistToSong.get(key));
         }

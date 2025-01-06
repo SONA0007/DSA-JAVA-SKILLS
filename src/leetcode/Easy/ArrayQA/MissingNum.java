@@ -1,5 +1,5 @@
 package leetcode.Easy.ArrayQA;
-/*Given an array nums containing n distinct numbers in the range [0, n],
+/*  Given an array nums containing n distinct numbers in the range [0, n],
 return the only number in the range that is missing from the array.
 Example 1:
 Input: nums = [3,0,1]
@@ -22,7 +22,7 @@ public class MissingNum {
 
         int expectedSum = size*(size+1)/2;// sum of n natural elements
         int actualSum =0;
-//        sum of arrays
+//      sum of arrays
         for (int i = 0; i < size; i++) {
             actualSum += arr[i];
         }
@@ -30,7 +30,8 @@ public class MissingNum {
         System.out.println("Missing num is "+ ans);
     }
 }
-/*First sort the elments then compare their index*/
+
+/*First sort the elements then compare their index*/
 class MissingNum2{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

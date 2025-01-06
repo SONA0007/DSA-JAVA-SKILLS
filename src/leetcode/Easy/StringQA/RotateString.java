@@ -15,9 +15,7 @@ public class RotateString {
         System.out.println(s.concat(s));
 
         System.out.println(rotateString(s, goal));
-
     }
-
     public static boolean rotateString(String s, String goal) {
         if (s.length() != goal.length()) {
             return false;
