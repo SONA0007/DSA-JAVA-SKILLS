@@ -78,7 +78,7 @@ public class IsLoopInSoftwareDelivery {
         ListNode head1 = LinkedListWithCycle(input1, 2); // Cycle starts at the 3rd node
         System.out.println("Cycle Detected (Expected true): " + hasCycle(head1));
         int[] input2 = {6, 4, 2, 8};
-        ListNode head2 = LinkedListWithCycle(input2, -1); // Cycle starts at the 3rd node
+        ListNode head2 = LinkedListWithCycle(input2, -1);
         System.out.println("Cycle Detected (Expected false): " + hasCycle(head2));
 
     }
