@@ -12,9 +12,8 @@ public class dotProduct {
         int dotProduct = 0;
         for (int i = 0; i < a.length; i++) {
             dotProduct += a[i] * b[i];
-
         }
-        System.out.println("dot product " + dotProduct);
+        System.out.println("dot product :" + dotProduct);
 
     }
 }

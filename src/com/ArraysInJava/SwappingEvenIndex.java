@@ -8,7 +8,6 @@ public class SwappingEvenIndex {
             array[i] = array[i + 2];
             array[i + 2] = temp;
         }
-
         System.out.println("After swapping : ");
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
