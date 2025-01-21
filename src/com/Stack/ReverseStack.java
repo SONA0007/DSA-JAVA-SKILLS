@@ -29,7 +29,7 @@ public class ReverseStack {
             return;
         }
 
-        // Remove the top element
+        // Remove the top element, the popped element will be the bottom element of reversed stack
         int top = st.pop();
 
         // Recursively insert the element at the bottom
