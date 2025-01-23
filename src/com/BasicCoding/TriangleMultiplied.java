@@ -1,4 +1,4 @@
-package com.ArraysInJava;
+package com.BasicCoding;
 
 public class TriangleMultiplied {
     public static void main(String[] args) {

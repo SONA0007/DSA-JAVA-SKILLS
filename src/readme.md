@@ -117,3 +117,29 @@ public static void main(String[] args) {
 |-------------------------------|------------------------------------------|-----------------------------------------|
 | **When `top` is incremented** | Before assigning value to `stack1[top]`. | After assigning value to `stack1[top]`. |
 | **Position of the Value**     | Value is placed at the next index.       | Value is placed at the current index.   |
+
+#### Why recursion
+
+# Recursion: An Overview
+
+Recursion is a technique where a function calls itself to solve smaller sub-problems of a larger problem. It is
+especially useful for problems that can naturally be divided into smaller instances of the same problem, such as:
+
+## Benefits of Recursion
+
+1. **Simplifying Complex Problems**  
+   Recursive solutions are often cleaner and more intuitive for tasks like:
+    - Tree traversal
+    - Graph traversal
+    - Divide-and-conquer algorithms (e.g., merge sort, quick sort)
+
+2. **Avoiding Explicit Loops**  
+   When you want to traverse or search through data structures like:
+    - Arrays
+    - Trees
+    - Graphs  
+      Recursion can replace explicit loops by breaking the task into smaller tasks.
+
+3. **Handling Hierarchical Structures**  
+   Problems involving hierarchical or nested structures (like trees, directories, or graphs) are naturally suited to
+   recursion.
